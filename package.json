@@ -1,0 +1,16 @@
+{
+    "name": "shopify-data-visualization",
+    "version": "1.0.0",
+    "scripts": {
+        "client": "npm start --prefix client",
+        "server": "nodemon server/server.js",
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "build": "npm run build --prefix client"
+    },
+    "dependencies": {
+        "shopify-data-visualization": "file:"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}
